@@ -53,4 +53,4 @@ git shortlog -sn
 
 Offset an entire Cube Trains map by x/y/z:
 set(ctm, <map data>)
-ctm + {'map': map(ctm['map'], list_replace_elements(value, 1, [list_add(value[1], offset)] ) )} where offset = [0,0,1]
+ctm + {'map': map(ctm['map'], list_replace_elements(value, 1, [zip(value[1], offset, a + b)] ) )} where offset = [0,0,1]
